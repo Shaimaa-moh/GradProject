@@ -1,6 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-
+import 'package:tflite_v2/tflite_v2.dart';
 import 'CameraPage.dart';
 
 void main() {
@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      title: 'Flutter Demo',
+        title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.grey.shade900,
-        colorScheme: ColorScheme.dark(),
-      ),
-      home: MyHomePage());
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.grey.shade900,
+          colorScheme: ColorScheme.dark(),
+        ),
+        home: MyHomePage());
   }
 }
 
@@ -61,3 +61,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
